@@ -8,7 +8,7 @@
     cwd: '{{ [ playbook_dir, ".." ] | path_join | realpath }}'
     image_path: '/images/boot.img'
     output_name: 'boot.bin'
-    magisk_release_url: 'https://github.com/topjohnwu/Magisk/releases/download/v30.5/Magisk-v30.5.apk'
+    magisk_release_url: 'https://github.com/topjohnwu/Magisk/releases/download/v30.7/Magisk-v30.7.apk'
     install_magisk: false
     replacements_in_files:
       - file: 'init.rc'
