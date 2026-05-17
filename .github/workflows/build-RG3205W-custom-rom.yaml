@@ -28,7 +28,7 @@ jobs:
     steps:
       - name: Check for cached image
         id: check-cached-image
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           key: stock-image-${{ inputs.stock-dump }}-${{ matrix.image-type }}
           path: RG3205W/stock-rom-dumps/${{ inputs.stock-dump }}/${{ matrix.image-type }}.bin
@@ -57,7 +57,7 @@ jobs:
 
       - name: Cache image
         if: steps.check-cached-image.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           key: stock-image-${{ inputs.stock-dump }}-${{ matrix.image-type }}
           path: RG3205W/stock-rom-dumps/${{ inputs.stock-dump }}/${{ matrix.image-type }}.bin
@@ -96,7 +96,7 @@ jobs:
           echo "sha=${COMMIT_SHA::7}" >> "$GITHUB_OUTPUT"
 
       - name: Restore cached image
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           key: stock-image-${{ inputs.stock-dump }}-${{ matrix.jobs.image-type }}
           path: RG3205W/stock-rom-dumps/${{ inputs.stock-dump }}/${{ matrix.jobs.image-type }}.bin
@@ -116,7 +116,7 @@ jobs:
       - name: Restore cached APKs to add
         id: restore-cached-apks-to-add
         if: matrix.jobs.image-type == 'system'
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           key: apks-to-add
           path: RG3205W/custom-rom-build/system/app
@@ -162,7 +162,7 @@ jobs:
 
       - name: Cache APKs to add
         if: matrix.jobs.image-type == 'system' && steps.restore-cached-apks-to-add.outputs.cache-hit != 'true'
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           key: apks-to-add
           path: RG3205W/custom-rom-build/system/app
