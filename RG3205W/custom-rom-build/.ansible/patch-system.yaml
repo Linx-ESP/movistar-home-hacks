@@ -9,7 +9,7 @@
     src_dir: '{{ [ cwd, "system" ] | path_join | realpath }}'
     image_path: '/images/system.img'
     mount_point: '/mnt/system'
-    http_user_agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36'
+    http_user_agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36'
     files_to_remove:
       - 'priv-app/BlockedNumberProvider/'
       - 'priv-app/CellBroadcastReceiver/'
