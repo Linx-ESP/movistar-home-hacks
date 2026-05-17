@@ -25,6 +25,9 @@
       - file: 'default.prop'
         pattern: '^ro\.logdumpd\.enabled=.*$'
         replace: 'ro.logdumpd.enabled=0'
+      - file: '/sys/class/power_supply/battery/capacity '
+        pattern: '50'
+        replace: '100'
 
   tasks:
     # Preparation
