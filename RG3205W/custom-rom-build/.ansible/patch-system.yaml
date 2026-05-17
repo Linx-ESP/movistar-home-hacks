@@ -47,7 +47,7 @@
       - name: 'AuroraStore.apk'
         description: 'Aurora Store 4.7.5'
         url: 'https://gitlab.com/-/project/6922885/uploads/90fd44162078169faaf4605ff8e9792f/AuroraStore-preload-4.8.3.apk'
-        sha256sum: '043D4AA22E3D45E7445C7B7959B8A30BCE4ABD48074253E2FB4243A4BB80026A'
+        sha256sum: '043d4aa22e3d45e7445c7b7959b8a30bce4abd48074253e2fb4243a4bb80026a'
       - name: 'Obtainium.apk'
         description: 'Obtainium 1.4.3'
         url: 'https://github.com/ImranR98/Obtainium/releases/download/v1.4.3/app-armeabi-v7a-release.apk'
