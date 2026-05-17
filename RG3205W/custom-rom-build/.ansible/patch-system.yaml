@@ -51,7 +51,7 @@
       - name: 'Obtainium.apk'
         description: 'Obtainium 1.4.3'
         url: 'https://github.com/ImranR98/Obtainium/releases/download/v1.4.3/app-armeabi-v7a-release.apk'
-        sha256sum: 'sha256:5193d0104359540f79e0bb884ac5fc24b1bf91c6b3268f6f6e6910ab1c4bb474'
+        sha256sum: '5193d0104359540f79e0bb884ac5fc24b1bf91c6b3268f6f6e6910ab1c4bb474'
     files_to_add:
       - source: 'bin/install-recovery.sh'
         target: 'bin/install-recovery.sh'
