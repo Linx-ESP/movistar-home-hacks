@@ -95,6 +95,9 @@
       - file: 'etc/prop.default'
         pattern: '^persist\.sys\.usb\.config=.*$'
         replace: 'persist.sys.usb.config=adb'
+      - file: '/sys/class/power_supply/battery/capacity '
+        pattern: '50'
+        replace: '100'
 
   tasks:
     # Preparation
